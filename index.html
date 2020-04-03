@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Поиск и доставка товаров из Китая. Выгодные условия. Высокая скорость. Быстрый расчет." />
     <meta name="keywords" content="товары из Китая, доставка товаров из Китая" />
+    <title>Benelli - доставка товаров из Китая</title>
     <!-- Favicon -->
     <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
@@ -13,46 +14,46 @@
     <meta property="og:description" content="Поиск и доставка товаров из Китая. Выгодные условия. Высокая скорость. Быстрый расчет." />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="https://.../img/650x527-lm31-smm.5f3.png" />
-    <meta property="og:site_name" content="Binelli" />
+    <meta property="og:site_name" content="Benelli" />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Binelli - доставка товаров из Китая</title>
   </head>
   <body>
     <!-- Header section -->
-    <header>
+    <header id="header">
       <div class="container">
-        <!--
-            Ольга, здесь вопрос: В nav берем только элементы самого меню или логотип с кнопкой также?
-            По сути  и лого, и кнопка входят в навигацию. Я их обернул общим контейнером nav. 
-            Но Андрей в видео показывал, что в nav заключаем только пункты меню (у меня они списком оформлены).
-        -->
         <nav>
           <a href="/">
-            <img src="/" alt="Binelli" />
+            <img src="/" alt="Benelli" />
           </a>
           <ul>
-            <li>Наши услуги</li>
-            <li>Преимущества</li>
-            <li>Схема работы</li>
-            <li>Доставка</li>
+            <li>
+              <a href="#">Наши услуги</a>
+            </li>
+            <li>
+              <a href="#">Преимущества</a>
+            </li>
+            <li>
+              <a href="#">Схема работы</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
           </ul>
-          <a href="#">Заказать звонок</a>
+          <button>
+            <a href="#">Заказать звонок</a>
+          </button>
         </nav>
         <div>
           <p>Выгодные условия. Высокая скорость. Быстрый расчет.</p>
           <h1>Поиск и доставка товаров из Китая</h1>
         </div>
         <form action="#">
-          <!--
-            Ольга, здесь вопрос: ниже Н2 или лучше в <р> взять заголовок формы?
-            Потому как визуально он вообще должен быть H3, но выше него стоит только Н1
-          -->
-          <h2>Расчет стоимости доставки</h2>
+          <h4>Расчет стоимости доставки</h4>
           <div>
-            <input type="text" name="name" value="" placeholder="Введите имя" required />
-            <input type="email" name="email" value="" placeholder="Введите E-mail" required />
-            <input type="tel" name="tel" value="" placeholder="Введите телефон" required />
+            <input type="text" name="name" placeholder="Введите имя" required />
+            <input type="email" name="email" placeholder="Введите E-mail" required />
+            <input type="tel" name="tel" placeholder="Введите телефон" required />
             <button type="submit">Заказать расчет</button>
           </div>
         </form>
@@ -96,18 +97,13 @@
       </section>
       <section>
         <div class="container">
-          <!-- Ольга, не смотря на то, что это новая секция и должен быть H2, но здесь не заголовок, а просто текст. 
-            Поэтому я сделал его тегом р 
-          -->
-          <p>Оставьте заявку на расчет прямо сейчас и получите скидку <span>-10%</span></p>
+          <h4>Оставьте заявку на расчет прямо сейчас и получите скидку <span>-10%</span></h4>
           <div>
             <div>
               <p>До конца акции:</p>
               <p>Успейте воспользоваться предложением</p>
             </div>
-            <div>
-              <p><span>36</span> минут</p>
-            </div>
+            <p><span>36</span> минут</p>
           </div>
         </div>
       </section>
@@ -164,10 +160,7 @@
       <section>
         <div class="container">
           <form action="#">
-            <!--
-                  Аналогично форме в шапке сайта
-                -->
-            <h2>Расчет стоимости доставки</h2>
+            <h4>Расчет стоимости доставки</h4>
             <div>
               <input type="text" name="name" value="" placeholder="Введите имя" required />
               <input type="email" name="email" value="" placeholder="Введите E-mail" required />
@@ -181,11 +174,11 @@
     <footer>
       <div class="container">
         <div>
-          <img src="#" alt="Binelli" />
+          <a href="#header">
+            <img src="#" alt="Benelli" />
+          </a>
           <p>© Все права защищены</p>
-          <p>
-            <a href="tel:74950535365">+7 495 053-53-65</a>
-          </p>
+          <a href="tel:74950535365">+7 495 053-53-65</a>
         </div>
       </div>
     </footer>
