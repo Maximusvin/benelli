@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Поиск и доставка товаров из Китая. Выгодные условия. Высокая скорость. Быстрый расчет." />
+    <meta name="keywords" content="товары из Китая, доставка товаров из Китая" />
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <!-- OG Tags -->
+    <meta property="og:title" content="Поиск и доставка товаров из Китая" />
+    <meta property="og:description" content="Поиск и доставка товаров из Китая. Выгодные условия. Высокая скорость. Быстрый расчет." />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://.../img/650x527-lm31-smm.5f3.png" />
+    <meta property="og:site_name" content="Binelli" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Binelli - доставка товаров из Китая</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <div class="container">
+        <!--
+            Ольга, здесь вопрос: В nav берем только элементы самого меню или логотип с кнопкой также?
+            По сути  и лого, и кнопка входят в навигацию. Я их обернул общим контейнером nav. 
+            Но Андрей в видео показывал, что в nav заключаем только пункты меню (у меня они списком оформлены).
+        -->
+        <nav>
+          <a href="/">
+            <img src="/" alt="Binelli" />
+          </a>
+          <ul>
+            <li>Наши услуги</li>
+            <li>Преимущества</li>
+            <li>Схема работы</li>
+            <li>Доставка</li>
+          </ul>
+          <a href="#">Заказать звонок</a>
+        </nav>
+        <div>
+          <p>Выгодные условия. Высокая скорость. Быстрый расчет.</p>
+          <h1>Поиск и доставка товаров из Китая</h1>
+        </div>
+        <form action="#">
+          <!--
+            Ольга, здесь вопрос: ниже Н2 или лучше в <р> взять заголовок формы?
+            Потому как визуально он вообще должен быть H3, но выше него стоит только Н1
+          -->
+          <h2>Расчет стоимости доставки</h2>
+          <div>
+            <input type="text" name="name" value="" placeholder="Введите имя" required />
+            <input type="email" name="email" value="" placeholder="Введите E-mail" required />
+            <input type="tel" name="tel" value="" placeholder="Введите телефон" required />
+            <button type="submit">Заказать расчет</button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <!-- Main section -->
+    <main>
+      <section>
+        <div class="container">
+          <h2>Наши услуги</h2>
+          <ul>
+            <li>
+              <img src="#" alt="icon1" />
+              <h3>Авиадоставка</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorempor
+                incididunt set
+              </p>
+              <span>от $150</span>
+            </li>
+            <li>
+              <img src="#" alt="icon2" />
+              <h3>Автодоставка</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorempor
+                incididunt set
+              </p>
+              <span>от $250</span>
+            </li>
+            <li>
+              <img src="#" alt="icon3" />
+              <h3>Шоптуры</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorempor
+                incididunt set
+              </p>
+              <span>от $350</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <!-- Ольга, не смотря на то, что это новая секция и должен быть H2, но здесь не заголовок, а просто текст. 
+            Поэтому я сделал его тегом р 
+          -->
+          <p>Оставьте заявку на расчет прямо сейчас и получите скидку <span>-10%</span></p>
+          <div>
+            <div>
+              <p>До конца акции:</p>
+              <p>Успейте воспользоваться предложением</p>
+            </div>
+            <div>
+              <p><span>36</span> минут</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Расценки на наши услуги</h2>
+          <table>
+            <tr>
+              <th>
+                Расстояние/<br />
+                способ
+              </th>
+              <th>До 1000 км.</th>
+              <th>До 2000 км.</th>
+              <th>До 3000 км.</th>
+              <th>До 4000 км.</th>
+              <th>До 5000 км.</th>
+            </tr>
+            <tr>
+              <td>Авиадоставка</td>
+              <td>$654</td>
+              <td>$754</td>
+              <td>$854</td>
+              <td>$954</td>
+              <td>$1054</td>
+            </tr>
+            <tr>
+              <td>Автодоставка</td>
+              <td></td>
+              <td>$746</td>
+              <td>$956</td>
+              <td>$20</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Шоп-тур</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>$3454</td>
+            </tr>
+            <tr>
+              <td>Другое</td>
+              <td>$128</td>
+              <td>$129</td>
+              <td>$130</td>
+              <td>$131</td>
+              <td>$132</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <form action="#">
+            <!--
+                  Аналогично форме в шапке сайта
+                -->
+            <h2>Расчет стоимости доставки</h2>
+            <div>
+              <input type="text" name="name" value="" placeholder="Введите имя" required />
+              <input type="email" name="email" value="" placeholder="Введите E-mail" required />
+              <input type="tel" name="tel" value="" placeholder="Введите телефон" required />
+              <button type="submit">Заказать расчет</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <img src="#" alt="Binelli" />
+          <p>© Все права защищены</p>
+          <p>
+            <a href="tel:74950535365">+7 495 053-53-65</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
